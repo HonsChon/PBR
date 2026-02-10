@@ -114,13 +114,15 @@ void Mesh::createSphere(int segments) {
 
             // 第一个三角形
             indices.push_back(first);
-            indices.push_back(second);
             indices.push_back(first + 1);
+            indices.push_back(second);
+            
 
             // 第二个三角形
             indices.push_back(second);
-            indices.push_back(second + 1);
             indices.push_back(first + 1);
+            indices.push_back(second + 1);
+            
         }
     }
 }
